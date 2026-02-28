@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=0.35">
+    <title>Offerte Aanvragen - Pressures Pro</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+        body { background:#fff; color: #000; padding: 40px 20px; text-align: center; }
+
+        nav { position:absolute; top:15px; right:15px; }
+        nav a { color:black; text-decoration:none; margin-left:15px; font-weight: 500; }
+
+        .container { max-width: 700px; margin: 60px auto; text-align: left; }
+
+        h1 { font-size: 3em; text-align: center; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .intro { text-align: center; margin-bottom: 40px; color: #333; line-height: 1.5; font-size: 1.1em; }
+
+        label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 1.1em; }
+        input, select, textarea { 
+            width: 100%; padding: 15px; margin-bottom: 25px; 
+            border: 1px solid #ccc; border-radius: 8px; font-size: 1em; 
+        }
+
+        .row { display: flex; gap: 20px; }
+        .row div { flex: 1; }
+
+        .btn-submit {
+            background: #0047FF; color: white; border: none; 
+            padding: 18px; width: 100%; border-radius: 10px; 
+            font-size: 1.2em; font-weight: 600; cursor: pointer; margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Diensten</a>
+    <a href="#">Over Ons</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>OFFERTE AANVRAGEN</h1>
+    <p class="intro">Vraag vandaag nog een offerte aan voor uw industriële schoonmaakwensen. We nemen zo snel mogelijk contact met u op.</p>
+
+    <form>
+        <label>Naam</label>
+        <input type="text" placeholder="Uw naam">
+
+        <label>Bedrijf</label>
+        <input type="text" placeholder="Uw bedrijfsnaam">
+
+        <div class="row">
+            <div>
+                <label>E-mailadres</label>
+                <input type="email" placeholder="email@voorbeeld.com">
+            </div>
+            <div>
+                <label>Telefoon</label>
+                <input type="tel" placeholder="0400 00 00 00">
+            </div>
+        </div>
+
+        <label>Locatie / Type Dienst</label>
+        <select>
+            <option>Selecteer type dienst</option>
+            <option>Hogedrukreiniging</option>
+            <option>Droogijsstralen</option>
+            <option>Machinereiniging</option>
+            <option>Reiniging op Hoogte</option>
+        </select>
+
+        <label>Bericht</label>
+        <textarea rows="6" placeholder="Vertel ons meer over de opdracht..."></textarea>
+
+        <button type="submit" class="btn-submit">Verzenden</button>
+    </form>
+</div>
+
+</body>
+</html>
+
