@@ -72,31 +72,28 @@
             margin:10px auto;
         }
 
-        /* De grid blijft 2 naast elkaar */
         .grid {
             display:grid;
             grid-template-columns:repeat(2,1fr);
             gap:25px; 
-            max-width:1100px; /* Iets breder voor de grotere balken */
+            max-width:1100px; 
             margin:0 auto;
         }
 
-        /* De kaarten zijn nu weer balken (flex-start) maar groter */
         .card {
             display:flex;
-            align-items: center; /* Icoon en tekst verticaal in het midden van de balk */
+            align-items: center; 
             background:#fff;
-            padding:35px 25px; /* Meer padding voor een grotere balk-look */
+            padding:35px 25px; 
             border-radius:12px;
             box-shadow:0 4px 15px rgba(0,0,0,0.1);
-            text-align: left; /* Tekst weer links uitgelijnd */
+            text-align: left; 
         }
 
-        /* Iconen aan de linkerkant en flink vergroot */
         .card img { 
-            width:90px; /* Grotere icons zoals gevraagd */
+            width:90px; 
             height:auto; 
-            margin-right:25px; /* Ruimte tussen icon en tekst */
+            margin-right:25px; 
             flex-shrink:0; 
         }
 
@@ -112,9 +109,9 @@
         <h1>INDUSTRIËLE<br>SCHOONMAAK</h1>
         <p class="subtitle">Professioneel - Veilig - Efficiënt. Meer dan 10 jaar ervaring</p>
         <div class="buttons">
-    <button onclick="location.href='offerte.html'">Offerte Aanvragen</button>
-    <button onclick="location.href='contact.html'">Contact</button>
-</div>
+            <button onclick="location.href='offerte.html'">Offerte Aanvragen</button>
+            <button onclick="location.href='contact.html'">Contact</button>
+        </div>
     </div>
 </header>
 
@@ -142,16 +139,26 @@
                 <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden.</p>
             </div>
         </div>
+        
         <div class="card" onclick="location.href='hoogte.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-    <img src="hoogte.png" alt="Reiniging op Hoogte">
-    <div class="card-content">
-        <h3>Reiniging op Hoogte</h3>
-        <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen. Klik voor meer info & foto's.</p>
-    </div>
-</div>
+            <img src="hoogte.png" alt="Reiniging op Hoogte">
+            <div class="card-content">
+                <h3>Reiniging op Hoogte</h3>
+                <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen. Klik voor info & foto's.</p>
+            </div>
         </div>
+
+        <div class="card">
+            <img src="zorg.png" alt="Zorgsector">
+            <div class="card-content">
+                <h3>Reiniging Zorgsector</h3>
+                <p>Gespecialiseerde desinfectie en dieptereiniging voor medische omgevingen en zorginstellingen.</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
 </body>
 </html>
+
