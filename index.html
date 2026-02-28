@@ -6,11 +6,12 @@
     <title>Industriële Schoonmaak België - Professionele Reinigingsdiensten | Pressures Pro</title>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
-        body { background:#fff; }
+        body { background:#fff; overflow-x: hidden; /* Voorkomt horizontaal scrollen */ }
 
         header {
             position:relative;
-            height:55vh;
+            height:60vh; /* Iets meer ruimte voor mobiel */
+            min-height: 400px;
             background:url('achtergrond.png') no-repeat center center/cover;
             color:white;
             text-shadow:2px 2px 5px rgba(0,0,0,0.75);
@@ -29,15 +30,17 @@
             padding:8px 16px;
             border-radius:25px;
             font-size:0.95em;
+            display: inline-block; /* Zorgt dat ze netjes naast elkaar blijven op mobiel */
         }
 
         .header-content {
             position:absolute;
-            top:63%;           /* Nog iets lager */
+            top:55%;
             left:50%;
             transform:translate(-50%, -50%);
             text-align:center;
-            width:85%;
+            width:90%;
+            max-width: 800px;
         }
 
         h1 { 
@@ -51,7 +54,7 @@
         }
 
         .buttons button {
-            background:#003087;     /* Donkerblauw */
+            background:#003087;
             color:white;
             border:none;
             padding:14px 34px;
@@ -60,6 +63,10 @@
             font-size:1.05em;
             font-weight:600;
             cursor:pointer;
+            transition: background 0.3s;
+        }
+        .buttons button:hover {
+            background:#002266;
         }
 
         section { padding:40px 5%; text-align:center; }
@@ -90,14 +97,47 @@
         }
 
         .card img { 
-            width:65px;          /* Grotere icons */
+            width:65px;
             height:auto; 
             margin-right:18px; 
             flex-shrink:0; 
         }
-        .card-content { flex:1; }
+        .card-content { flex:1; text-align: left; }
         .card h3 { font-size:1.25em; color:#003087; margin-bottom:5px; }
         .card p { font-size:0.9em; color:#555; line-height:1.4; }
+
+        /* --- HIER BEGINT DE MOBIELE CODE --- */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em; /* Titel kleiner maken zodat het past */
+            }
+            .subtitle {
+                font-size: 1em;
+                margin-bottom: 15px;
+            }
+            .grid {
+                grid-template-columns: 1fr; /* Zet de diensten-blokken onder elkaar (1 kolom) */
+            }
+            nav {
+                top: 10px; 
+                right: 0;
+                width: 100%;
+                text-align: center; /* Centreer het menu op mobiel */
+            }
+            nav a {
+                margin: 5px;
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+            .buttons button {
+                padding: 12px 24px;
+                font-size: 0.95em;
+                width: 80%; /* Knoppen iets breder op mobiel */
+                max-width: 300px;
+                display: block; /* Knoppen onder elkaar op kleine schermen */
+                margin: 10px auto;
+            }
+        }
     </style>
 </head>
 <body>
