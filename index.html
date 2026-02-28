@@ -5,100 +5,105 @@
     <meta name="viewport" content="width=1024, initial-scale=0.35">
     <title>Industriële Schoonmaak België - Professionele Reinigingsdiensten | Pressures Pro</title>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
-        body { background:#fff; }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+    body { background:#fff; }
 
-        header {
-            position:relative;
-            height:55vh;
-            background:url('achtergrond.png') no-repeat center center/cover;
-            color:white;
-            text-shadow:2px 2px 5px rgba(0,0,0,0.75);
-        }
+    header {
+        position:relative;
+        height:55vh;
+        background:url('achtergrond.png') no-repeat center center/cover;
+        color:white;
+        text-shadow:2px 2px 5px rgba(0,0,0,0.75);
+    }
 
-        nav {
-            position:absolute;
-            top:15px; right:15px;
-            z-index:10;
-        }
-        nav a {
-            color:white;
-            text-decoration:none;
-            margin-left:12px;
-            background:rgba(0,0,0,0.5);
-            padding:8px 16px;
-            border-radius:25px;
-            font-size:0.95em;
-        }
+    nav {
+        position:absolute;
+        top:15px; right:15px;
+        z-index:10;
+    }
+    nav a {
+        color:white;
+        text-decoration:none;
+        margin-left:12px;
+        background:rgba(0,0,0,0.5);
+        padding:8px 16px;
+        border-radius:25px;
+        font-size:0.95em;
+    }
 
-        .header-content {
-            position:absolute;
-            top:63%;           
-            left:50%;
-            transform:translate(-50%, -50%);
-            text-align:center;
-            width:85%;
-        }
+    .header-content {
+        position:absolute;
+        top:63%;           
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align:center;
+        width:85%;
+    }
 
-        h1 { 
-            font-size:3.9em; 
-            line-height:1; 
-            margin-bottom:8px; 
-        }
-        .subtitle { 
-            font-size:1.2em; 
-            margin-bottom:22px; 
-        }
+    h1 { 
+        font-size:3.9em; 
+        line-height:1; 
+        margin-bottom:8px; 
+    }
+    .subtitle { 
+        font-size:1.2em; 
+        margin-bottom:22px; 
+    }
 
-        .buttons button {
-            background:#003087;     
-            color:white;
-            border:none;
-            padding:14px 34px;
-            margin:8px;
-            border-radius:8px;
-            font-size:1.05em;
-            font-weight:600;
-            cursor:pointer;
-        }
+    .buttons button {
+        background:#003087;     
+        color:white;
+        border:none;
+        padding:14px 34px;
+        margin:8px;
+        border-radius:8px;
+        font-size:1.05em;
+        font-weight:600;
+        cursor:pointer;
+    }
 
-        section { padding:40px 5%; text-align:center; }
-        section h2 { font-size:2em; margin-bottom:15px; }
-        section h2::after {
-            content:'';
-            display:block;
-            width:50px; height:3px;
-            background:#000;
-            margin:10px auto;
-        }
+    section { padding:40px 5%; text-align:center; }
+    section h2 { font-size:2em; margin-bottom:15px; }
+    section h2::after {
+        content:'';
+        display:block;
+        width:50px; height:3px;
+        background:#000;
+        margin:10px auto;
+    }
 
-        .grid {
-            display:grid;
-            grid-template-columns:repeat(2,1fr);
-            gap:20px;
-            max-width:900px;
-            margin:0 auto;
-        }
+    .grid {
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:25px; /* Iets meer ruimte tussen de grotere kaarten */
+        max-width:1000px; /* Raster iets breder gemaakt */
+        margin:0 auto;
+    }
 
-        .card {
-            display:flex;
-            align-items:flex-start;
-            background:#fff;
-            padding:25px 20px;
-            border-radius:10px;
-            box-shadow:0 3px 12px rgba(0,0,0,0.1);
-        }
+    .card {
+        display:flex;
+        flex-direction: column; /* Icoon boven tekst voor een krachtige look */
+        align-items:center;
+        justify-content: center;
+        background:#fff;
+        padding:35px 20px; /* Meer padding voor grotere cards */
+        border-radius:15px;
+        box-shadow:0 5px 20px rgba(0,0,0,0.1);
+        min-height: 280px; /* Dwingt een grotere vorm af */
+        text-align: center;
+    }
 
-        .card img { 
-            width:65px;          
-            height:auto; 
-            margin-right:18px; 
-            flex-shrink:0; 
-        }
-        .card-content { flex:1; }
-        .card h3 { font-size:1.25em; color:#003087; margin-bottom:5px; }
-        .card p { font-size:0.9em; color:#555; line-height:1.4; }
-    </style>
+    .card img { 
+        width:100px; /* Veel grotere afbeeldingen/iconen */
+        height:auto; 
+        margin-bottom:20px; 
+        flex-shrink:0; 
+    }
+
+    .card-content { flex:1; }
+    .card h3 { font-size:1.4em; color:#003087; margin-bottom:10px; }
+    .card p { font-size:1em; color:#555; line-height:1.4; }
+</style>
 </head>
 <body>
 
