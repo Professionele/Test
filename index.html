@@ -3,7 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Industriële Schoonmaak</title>
+    <title>Industriële Schoonmaak België - Professionele Reinigingsdiensten | Pressures Pro</title>
+    <meta name="description" content="Professionele industriële schoonmaakdiensten in België. Hogedrukreiniging, droogijsstralen, ventilatie- en machinereiniging, reiniging op hoogte. Veilig, efficiënt en met meer dan 10 jaar ervaring. Vraag een offerte aan!">
+    <meta name="keywords" content="industriële schoonmaak, hogedrukreiniging, droogijsstralen, machinereiniging, reiniging op hoogte, schoonmaakdiensten België">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://professionele.github.io/Test/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Pressures Pro Industriële Schoonmaak",
+      "image": "https://professionele.github.io/Test/achtergrond.jpg",
+      "@id": "",
+      "url": "https://professionele.github.io/Test/",
+      "telephone": "+32-123-456-789",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Voorbeeldstraat 123",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2000",
+        "addressCountry": "BE"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/yourprofile",
+        "https://www.linkedin.com/company/yourcompany"
+      ]
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -18,8 +57,8 @@
 
         header {
             position: relative;
-            height: 50vh; /* Volledige hoogte op mobile */
-            background: url('achtergrond.jpg') no-repeat center center/cover;
+            height: 60vh; /* Groter voor desktop feel */
+            background: url('achtergrond.jpg') no-repeat center center/contain; /* Contain om niet te zoomen */
             color: white;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
@@ -50,12 +89,13 @@
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3.5em;
             margin-bottom: 10px;
+            line-height: 1;
         }
 
         .subtitle {
-            font-size: 1em;
+            font-size: 1.2em;
             margin-bottom: 20px;
         }
 
@@ -91,7 +131,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: 1fr; /* 1 column op mobile */
+            grid-template-columns: repeat(2, 1fr); /* 2x2 voor desktop */
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
@@ -122,22 +162,22 @@
             color: #555;
         }
 
-        /* Voor grotere schermen (desktop) 2 columns */
-        @media (min-width: 768px) {
+        /* Voor mobile stacken, maar prioriteer desktop */
+        @media (max-width: 767px) {
             .grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
 
             header {
-                height: 60vh;
+                height: 50vh;
             }
 
             h1 {
-                font-size: 3.5em;
+                font-size: 2.5em;
             }
 
             .subtitle {
-                font-size: 1.2em;
+                font-size: 1em;
             }
         }
     </style>
@@ -150,7 +190,7 @@
             <a href="#contact">Contact</a>
         </nav>
         <div class="header-content">
-            <h1>INDUSTRIËLE SCHOONMAAK</h1>
+            <h1>INDUSTRIËLE<br>SCHOONMAAK</h1>
             <p class="subtitle">Professioneel - Veilig - Efficient. Meer dan 10 jaar ervaring</p>
             <div class="buttons">
                 <button>Offerte Aanvragen</button>
@@ -163,22 +203,22 @@
         <h2>Onze Diensten</h2>
         <div class="grid">
             <div class="card">
-                <img src="hogedrukreiniging.png" alt="Hogedrukreiniging icon">
+                <img src="hogedrukreiniging.png" alt="Hogedrukreiniging icoon voor industriële schoonmaak">
                 <h3>Hogedrukreiniging</h3>
                 <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen.</p>
             </div>
             <div class="card">
-                <img src="droogstralen.png" alt="Droogijsstralen icon">
+                <img src="droogstralen.png" alt="Droogijsstralen icoon voor veilige machine reiniging">
                 <h3>Droogijsstralen</h3>
                 <p>Krachtige maar veilige reiniging van gevoelige machines en oppervlakken.</p>
             </div>
             <div class="card">
-                <img src="tandwielen.png" alt="Ventilatie-en Machinereiniging icon">
+                <img src="tandwielen.png" alt="Ventilatie- en machinereiniging icoon voor efficiënte systemen">
                 <h3>Ventilatie-en Machinereiniging</h3>
                 <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden.</p>
             </div>
             <div class="card">
-                <img src="hoogte.png" alt="Reiniging op Hoogte icon">
+                <img src="hoogte.png" alt="Reiniging op hoogte icoon voor moeilijk bereikbare plaatsen">
                 <h3>Reiniging op Hoogte</h3>
                 <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen.</p>
             </div>
