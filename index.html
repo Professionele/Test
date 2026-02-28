@@ -6,11 +6,11 @@
     <title>Industriële Schoonmaak België - Professionele Reinigingsdiensten | Pressures Pro</title>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
-        body { background:#fff; }
+        body { background:#fff; padding:0 5%; } /* Add side padding to avoid edge sticking */
 
         header {
             position:relative;
-            height:60vh;
+            height:50vh; /* Reduced height for better fit */
             background:url('achtergrond.png') no-repeat center top/cover;
             color:white;
             text-shadow:1px 1px 3px rgba(0,0,0,0.6);
@@ -36,58 +36,55 @@
             top:50%; left:50%;
             transform:translate(-50%,-50%);
             text-align:center;
-            width:90%;
+            width:80%; /* Reduced width for spacing */
         }
 
-        h1 { font-size:3.2em; line-height:1; margin-bottom:10px; }
-        .subtitle { font-size:1.1em; margin-bottom:25px; }
+        h1 { font-size:2.5em; line-height:1; margin-bottom:10px; } /* Smaller font */
+        .subtitle { font-size:1em; margin-bottom:20px; } /* Smaller */
 
         .buttons button {
             background:#007bff;
             color:white;
             border:none;
-            padding:12px 28px;
-            margin:8px;
+            padding:10px 24px; /* Slightly smaller */
+            margin:6px;
             border-radius:8px;
-            font-size:1em;
+            font-size:0.95em;
             cursor:pointer;
         }
 
-        section { padding:50px 20px; text-align:center; }
-        section h2 { font-size:2.2em; margin-bottom:15px; }
+        section { padding:40px 0; text-align:center; }
+        section h2 { font-size:2em; margin-bottom:15px; }
         section h2::after {
             content:'';
             display:block;
-            width:60px; height:3px;
+            width:50px; height:2px;
             background:#000;
             margin:10px auto;
         }
 
         .grid {
             display:grid;
-            grid-template-columns: repeat(2, 1fr); /* ALTIJD 2 naast elkaar */
-            gap:20px;
-            max-width:1200px;
+            grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+            gap:25px;
+            max-width:1000px; /* Smaller max-width for centered feel */
             margin:0 auto;
         }
 
         .card {
-            background:#f9f9f9;
-            padding:25px 20px;
-            border-radius:12px;
-            box-shadow:0 4px 15px rgba(0,0,0,0.08);
+            background:#fff; /* Pure white for screenshot match */
+            padding:20px 15px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
             text-align:left;
         }
 
-        .card img { width:48px; height:auto; margin-bottom:12px; }
-        .card h3 { font-size:1.35em; color:#007bff; margin-bottom:8px; }
-        .card p { font-size:0.95em; color:#444; line-height:1.5; }
+        .card img { width:40px; height:auto; margin-bottom:10px; }
+        .card h3 { font-size:1.2em; color:#007bff; margin-bottom:6px; }
+        .card p { font-size:0.9em; color:#555; line-height:1.4; }
 
-        /* Kleine extra aanpassing zodat het op telefoon ook mooi blijft */
-        @media (max-width: 480px) {
-            .grid { gap:15px; }
-            .card { padding:20px 15px; }
-        }
+        /* No stacking on mobile - force desktop layout */
+        /* If too squeezed, it will scroll horizontally, but matches request */
     </style>
 </head>
 <body>
@@ -117,17 +114,17 @@
             <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen.</p>
         </div>
         <div class="card">
-            <img src="droogstralen.png" alt="Droogijsstralen">
+            <img src="droogstralen.png" alt="Droogijsstralen icoon voor veilige machine reiniging">
             <h3>Droogijsstralen</h3>
             <p>Krachtige maar veilige reiniging van gevoelige machines en oppervlakken.</p>
         </div>
         <div class="card">
-            <img src="tandwielen.png" alt="Ventilatie-en Machinereiniging">
+            <img src="tandwielen.png" alt="Ventilatie- en machinereiniging icoon voor efficiënte systemen">
             <h3>Ventilatie-en Machinereiniging</h3>
             <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden.</p>
         </div>
         <div class="card">
-            <img src="hoogte.png" alt="Reiniging op Hoogte">
+            <img src="hoogte.png" alt="Reiniging op hoogte icoon voor moeilijk bereikbare plaatsen">
             <h3>Reiniging op Hoogte</h3>
             <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen.</p>
         </div>
