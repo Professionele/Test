@@ -8,36 +8,44 @@
         * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
         body { background:#fff; text-align: center; color: #000; padding-top: 50px; position: relative; }
 
+        /* Terug-pijl naar de hoofdpagina */
         .back-arrow {
             position: absolute;
-            top: 20px; left: 25px;
-            font-size: 3em; color: #0047FF;
-            text-decoration: none; font-weight: bold;
+            top: 20px;
+            left: 25px;
+            font-size: 3.5em;
+            color: #0047FF;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 100;
         }
 
+        /* Navigatie rechtsboven */
         nav { position:absolute; top:15px; right:15px; }
-        nav a { color:black; text-decoration:none; margin-left:15px; font-weight: 500; }
+        nav a { color:black; text-decoration:none; margin-left:15px; font-weight: 500; font-size: 1.1em; }
 
         .container { max-width: 600px; margin: 80px auto; padding: 20px; }
         h1 { font-size: 3.5em; letter-spacing: 2px; margin-bottom: 20px; text-transform: uppercase; }
-        .intro { font-size: 1.2em; color: #333; margin-bottom: 40px; }
+        .intro { font-size: 1.2em; color: #333; margin-bottom: 40px; line-height: 1.6; }
 
         .contact-info { text-align: left; display: inline-block; margin-bottom: 40px; }
         .info-row { display: flex; align-items: center; margin-bottom: 20px; font-size: 1.3em; font-weight: 600; }
         
         .icon {
-            width: 40px; height: 40px; background: #0047FF; color: white;
+            width: 45px; height: 45px; background: #0047FF; color: white;
             display: flex; align-items: center; justify-content: center;
             border-radius: 8px; margin-right: 20px;
         }
 
-        /* Formspree knop */
+        /* Verzendknop gekoppeld aan Formspree */
         .btn-verzenden {
             background: #0047FF; color: white; border: none;
-            padding: 18px 60px; font-size: 1.2em; font-weight: 600;
-            border-radius: 10px; cursor: pointer; text-decoration: none;
+            padding: 20px 60px; font-size: 1.3em; font-weight: 700;
+            border-radius: 12px; cursor: pointer; text-decoration: none;
             display: inline-block;
+            transition: background 0.3s;
         }
+        .btn-verzenden:hover { background: #0036cc; }
     </style>
 </head>
 <body>
@@ -56,16 +64,16 @@
 
     <div class="contact-info">
         <div class="info-row"><div class="icon">📍</div> België</div>
-        <div class="info-row"><div class="icon">📞</div> +32 (Vul nummer in)</div>
+        <div class="info-row"><div class="icon">📞</div> +32 (Vul hier je nummer in)</div>
         <div class="info-row"><div class="icon">✉️</div> info@pressurespro.be</div>
     </div>
 
+    <br>
     <form action="https://formspree.io/f/mdaljekl" method="POST">
-        <input type="hidden" name="_subject" value="Nieuw bericht van website">
-        <button type="submit" class="btn-verzenden">Klik hier om te mailen</button>
+        <input type="hidden" name="_subject" value="Nieuw bericht via Contactpagina - Pressures Pro">
+        <button type="submit" class="btn-verzenden">Verzenden</button>
     </form>
 </div>
 
 </body>
 </html>
-
