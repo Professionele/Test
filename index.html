@@ -4,210 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industriële Schoonmaak België - Professionele Reinigingsdiensten | Pressures Pro</title>
-    <meta name="description" content="Professionele industriële schoonmaakdiensten in België. Hogedrukreiniging, droogijsstralen, ventilatie- en machinereiniging, reiniging op hoogte. Veilig, efficiënt en met meer dan 10 jaar ervaring. Vraag een offerte aan!">
-    <meta name="keywords" content="industriële schoonmaak, hogedrukreiniging, droogijsstralen, machinereiniging, reiniging op hoogte, schoonmaakdiensten België">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://professionele.github.io/Test/">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Pressures Pro Industriële Schoonmaak",
-      "image": "https://professionele.github.io/Test/achtergrond.png",
-      "@id": "",
-      "url": "https://professionele.github.io/Test/",
-      "telephone": "+32-123-456-789",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Voorbeeldstraat 123",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2000",
-        "addressCountry": "BE"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "08:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/yourprofile",
-        "https://www.linkedin.com/company/yourcompany"
-      ]
-    }
-    </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-
-        body {
-            background: #fff;
-        }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+        body { background:#fff; }
 
         header {
-            position: relative;
-            height: 60vh; /* Groot voor desktop feel */
-            background: url('achtergrond.png') no-repeat center top/cover; /* Cover voor full fit, top aligned */
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            position:relative;
+            height:60vh;
+            background:url('achtergrond.png') no-repeat center top/cover;
+            color:white;
+            text-shadow:1px 1px 3px rgba(0,0,0,0.6);
         }
 
         nav {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+            position:absolute;
+            top:15px; right:15px;
+            z-index:10;
         }
-
         nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 14px;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 5px 10px;
-            border-radius: 20px;
+            color:white;
+            text-decoration:none;
+            margin-left:15px;
+            background:rgba(0,0,0,0.4);
+            padding:8px 16px;
+            border-radius:30px;
+            font-size:14px;
         }
 
         .header-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 90%;
+            position:absolute;
+            top:50%; left:50%;
+            transform:translate(-50%,-50%);
+            text-align:center;
+            width:90%;
         }
 
-        h1 {
-            font-size: 3em; /* Kleiner voor grote pagina feel */
-            margin-bottom: 10px;
-            line-height: 1;
-        }
-
-        .subtitle {
-            font-size: 1em; /* Kleiner */
-            margin-bottom: 20px;
-        }
+        h1 { font-size:3.2em; line-height:1; margin-bottom:10px; }
+        .subtitle { font-size:1.1em; margin-bottom:25px; }
 
         .buttons button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 8px 16px; /* Kleiner buttons */
-            margin: 5px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.9em; /* Kleiner tekst */
+            background:#007bff;
+            color:white;
+            border:none;
+            padding:12px 28px;
+            margin:8px;
+            border-radius:8px;
+            font-size:1em;
+            cursor:pointer;
         }
 
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
+        section { padding:50px 20px; text-align:center; }
+        section h2 { font-size:2.2em; margin-bottom:15px; }
         section h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 2px;
-            background: #000;
-            margin: 10px auto;
+            content:'';
+            display:block;
+            width:60px; height:3px;
+            background:#000;
+            margin:10px auto;
         }
 
         .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Altijd 2 columns, voor desktop layout op alle schermen */
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            display:grid;
+            grid-template-columns: repeat(2, 1fr); /* ALTIJD 2 naast elkaar */
+            gap:20px;
+            max-width:1200px;
+            margin:0 auto;
         }
 
         .card {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            background:#f9f9f9;
+            padding:25px 20px;
+            border-radius:12px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.08);
+            text-align:left;
         }
 
-        .card img {
-            width: 50px;
-            height: auto;
-            margin-bottom: 10px;
-        }
+        .card img { width:48px; height:auto; margin-bottom:12px; }
+        .card h3 { font-size:1.35em; color:#007bff; margin-bottom:8px; }
+        .card p { font-size:0.95em; color:#444; line-height:1.5; }
 
-        .card h3 {
-            font-size: 1.2em;
-            color: #007bff;
-            margin-bottom: 5px;
+        /* Kleine extra aanpassing zodat het op telefoon ook mooi blijft */
+        @media (max-width: 480px) {
+            .grid { gap:15px; }
+            .card { padding:20px 15px; }
         }
-
-        .card p {
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        /* Geen media query voor stacking op mobile - forceert desktop layout */
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#diensten">Diensten</a>
-            <a href="#over-ons">Over Ons</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="header-content">
-            <h1>INDUSTRIËLE<br>SCHOONMAAK</h1>
-            <p class="subtitle">Professioneel - Veilig - Efficient. Meer dan 10 jaar ervaring</p>
-            <div class="buttons">
-                <button>Offerte Aanvragen</button>
-                <button>Contact</button>
-            </div>
-        </div>
-    </header>
 
-    <section id="diensten">
-        <h2>Onze Diensten</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="hogedrukreiniging.png" alt="Hogedrukreiniging">
-                <h3>Hogedrukreiniging</h3>
-                <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen.</p>
-            </div>
-            <div class="card">
-                <img src="droogstralen.png" alt="Droogijsstralen icoon voor veilige machine reiniging">
-                <h3>Droogijsstralen</h3>
-                <p>Krachtige maar veilige reiniging van gevoelige machines en oppervlakken.</p>
-            </div>
-            <div class="card">
-                <img src="tandwielen.png" alt="Ventilatie- en machinereiniging icoon voor efficiënte systemen">
-                <h3>Ventilatie-en Machinereiniging</h3>
-                <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden.</p>
-            </div>
-            <div class="card">
-                <img src="hoogte.png" alt="Reiniging op hoogte icoon voor moeilijk bereikbare plaatsen">
-                <h3>Reiniging op Hoogte</h3>
-                <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen.</p>
-            </div>
+<header>
+    <nav>
+        <a href="#diensten">Diensten</a>
+        <a href="#over-ons">Over Ons</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-content">
+        <h1>INDUSTRIËLE<br>SCHOONMAAK</h1>
+        <p class="subtitle">Professioneel - Veilig - Efficiënt. Meer dan 10 jaar ervaring</p>
+        <div class="buttons">
+            <button>Offerte Aanvragen</button>
+            <button>Contact</button>
         </div>
-    </section>
+    </div>
+</header>
 
-    <!-- Voeg hier eventueel meer secties toe zoals Over Ons, Contact, etc. -->
+<section id="diensten">
+    <h2>Onze Diensten</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="hogedrukreiniging.png" alt="Hogedrukreiniging">
+            <h3>Hogedrukreiniging</h3>
+            <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen.</p>
+        </div>
+        <div class="card">
+            <img src="droogstralen.png" alt="Droogijsstralen">
+            <h3>Droogijsstralen</h3>
+            <p>Krachtige maar veilige reiniging van gevoelige machines en oppervlakken.</p>
+        </div>
+        <div class="card">
+            <img src="tandwielen.png" alt="Ventilatie-en Machinereiniging">
+            <h3>Ventilatie-en Machinereiniging</h3>
+            <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden.</p>
+        </div>
+        <div class="card">
+            <img src="hoogte.png" alt="Reiniging op Hoogte">
+            <h3>Reiniging op Hoogte</h3>
+            <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen.</p>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
