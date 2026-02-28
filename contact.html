@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=0.35">
+    <title>Contact - Pressures Pro</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+        body { background:#fff; text-align: center; color: #000; padding-top: 50px; }
+
+        nav {
+            position:absolute;
+            top:15px; right:15px;
+        }
+        nav a {
+            color:black;
+            text-decoration:none;
+            margin-left:15px;
+            font-size:1.1em;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .intro {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 50px;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        /* Iconen (vervangen door gekleurde symbolen voor nu) */
+        .icon {
+            width: 35px;
+            height: 35px;
+            background: #0047FF;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-right: 20px;
+            font-size: 0.8em;
+        }
+
+        .btn-verzenden {
+            background: #0047FF;
+            color: white;
+            border: none;
+            padding: 15px 60px;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Diensten</a>
+    <a href="#">Over Ons</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>CONTACT</h1>
+    <p class="intro">Neem gerust contact met ons op voor meer informatie over onze industriële schoonmaakdiensten.</p>
+
+    <div class="contact-info">
+        <div class="info-row">
+            <div class="icon">📍</div> Gent, België
+        </div>
+        <div class="info-row">
+            <div class="icon">📞</div> +32 9 123 45 67
+        </div>
+        <div class="info-row">
+            <div class="icon">✉️</div> info@voorbeeld.com
+        </div>
+    </div>
+
+    <br>
+    <a href="mailto:info@voorbeeld.com" class="btn-verzenden">Verzenden</a>
+</div>
+
+</body>
+</html>
+
