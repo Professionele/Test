@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Industriële Schoonmaak België - Professionele Reinigingsdiensten | Pressures Pro</title>
+    <title>Industriële Schoonmaak België | Pressures Pro</title>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
-        body { background:#fff; overflow-x: hidden; /* Voorkomt horizontaal scrollen */ }
+        body { background:#fff; overflow-x: hidden; }
 
         header {
             position:relative;
-            height:60vh; /* Iets meer ruimte voor mobiel */
+            height:60vh;
             min-height: 400px;
             background:url('achtergrond.png') no-repeat center center/cover;
             color:white;
@@ -30,7 +30,6 @@
             padding:8px 16px;
             border-radius:25px;
             font-size:0.95em;
-            display: inline-block; /* Zorgt dat ze netjes naast elkaar blijven op mobiel */
         }
 
         .header-content {
@@ -40,18 +39,10 @@
             transform:translate(-50%, -50%);
             text-align:center;
             width:90%;
-            max-width: 800px;
         }
 
-        h1 { 
-            font-size:3.9em; 
-            line-height:1; 
-            margin-bottom:8px; 
-        }
-        .subtitle { 
-            font-size:1.2em; 
-            margin-bottom:22px; 
-        }
+        h1 { font-size:3.5em; line-height:1; margin-bottom:8px; }
+        .subtitle { font-size:1.1em; margin-bottom:22px; }
 
         .buttons button {
             background:#003087;
@@ -62,21 +53,12 @@
             border-radius:8px;
             font-size:1.05em;
             font-weight:600;
-            cursor:pointer;
-            transition: background 0.3s;
-        }
-        .buttons button:hover {
-            background:#002266;
         }
 
         section { padding:40px 5%; text-align:center; }
         section h2 { font-size:2em; margin-bottom:15px; }
         section h2::after {
-            content:'';
-            display:block;
-            width:50px; height:3px;
-            background:#000;
-            margin:10px auto;
+            content:''; display:block; width:50px; height:3px; background:#000; margin:10px auto;
         }
 
         .grid {
@@ -96,47 +78,44 @@
             box-shadow:0 3px 12px rgba(0,0,0,0.1);
         }
 
-        .card img { 
-            width:65px;
-            height:auto; 
-            margin-right:18px; 
-            flex-shrink:0; 
-        }
+        .card img { width:60px; height:auto; margin-right:15px; flex-shrink:0; }
         .card-content { flex:1; text-align: left; }
-        .card h3 { font-size:1.25em; color:#003087; margin-bottom:5px; }
+        .card h3 { font-size:1.2em; color:#003087; margin-bottom:5px; }
         .card p { font-size:0.9em; color:#555; line-height:1.4; }
 
-        /* --- HIER BEGINT DE MOBIELE CODE --- */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2em; /* Titel kleiner maken zodat het past */
-            }
-            .subtitle {
-                font-size: 1em;
-                margin-bottom: 15px;
-            }
+        /* --- MOBIELE AANPASSINGEN VOOR 2x2 LAYOUT --- */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2em; }
+            
             .grid {
-                grid-template-columns: 1fr; /* Zet de diensten-blokken onder elkaar (1 kolom) */
+                grid-template-columns: repeat(2, 1fr); /* Dwingt 2 kolommen af */
+                gap: 10px;
             }
-            nav {
-                top: 10px; 
-                right: 0;
-                width: 100%;
-                text-align: center; /* Centreer het menu op mobiel */
+
+            .card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 15px 5px;
             }
-            nav a {
-                margin: 5px;
-                padding: 6px 12px;
-                font-size: 0.85em;
+
+            .card img {
+                width: 45px;
+                margin-right: 0;
+                margin-bottom: 10px;
             }
-            .buttons button {
-                padding: 12px 24px;
-                font-size: 0.95em;
-                width: 80%; /* Knoppen iets breder op mobiel */
-                max-width: 300px;
-                display: block; /* Knoppen onder elkaar op kleine schermen */
-                margin: 10px auto;
+
+            .card h3 {
+                font-size: 0.85em; /* Kleiner om op één regel te passen */
             }
+
+            .card p {
+                font-size: 0.75em; /* Veel kleinere tekst zodat het blokje niet te lang wordt */
+                line-height: 1.2;
+            }
+
+            nav { width: 100%; right: 0; text-align: center; top: 10px; }
+            nav a { margin: 2px; padding: 5px 10px; font-size: 0.7em; }
         }
     </style>
 </head>
@@ -165,28 +144,28 @@
             <img src="hogedrukreiniging.png" alt="Hogedrukreiniging">
             <div class="card-content">
                 <h3>Hogedrukreiniging</h3>
-                <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen.</p>
+                <p>Vet en roest verwijderen.</p>
             </div>
         </div>
         <div class="card">
             <img src="droogstralen.png" alt="Droogijsstralen">
             <div class="card-content">
                 <h3>Droogijsstralen</h3>
-                <p>Krachtige maar veilige reiniging van gevoelige machines en oppervlakken.</p>
+                <p>Veilig voor machines.</p>
             </div>
         </div>
         <div class="card">
-            <img src="tandwielen.png" alt="Ventilatie-en Machinereiniging">
+            <img src="tandwielen.png" alt="Machinereiniging">
             <div class="card-content">
-                <h3>Ventilatie-en Machinereiniging</h3>
-                <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden.</p>
+                <h3>Machinereiniging</h3>
+                <p>Behoud van efficiëntie.</p>
             </div>
         </div>
         <div class="card">
             <img src="hoogte.png" alt="Reiniging op Hoogte">
             <div class="card-content">
                 <h3>Reiniging op Hoogte</h3>
-                <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen.</p>
+                <p>Moeilijk bereikbare plaatsen.</p>
             </div>
         </div>
     </div>
