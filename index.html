@@ -131,7 +131,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2x2 voor desktop */
+            grid-template-columns: repeat(2, 1fr); /* 2x2: twee naast elkaar, twee onder */
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
@@ -162,7 +162,7 @@
             color: #555;
         }
 
-        /* Voor mobile, maar prioriteer desktop */
+        /* Voor mobile, stack naar 1 column, maar desktop prioriteit */
         @media (max-width: 767px) {
             .grid {
                 grid-template-columns: 1fr;
@@ -208,7 +208,7 @@
         <h2>Onze Diensten</h2>
         <div class="grid">
             <div class="card">
-                <img src="hogedrukreiniging.png" alt="Hogedrukreiniging icoon voor industriële schoonmaak">
+                <img src="hogedrukreiniging.png" alt="Hogedrukreiniging">
                 <h3>Hogedrukreiniging</h3>
                 <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen.</p>
             </div>
