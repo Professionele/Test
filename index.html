@@ -57,7 +57,7 @@
 
         header {
             position: relative;
-            height: 60vh; /* Voor desktop feel, groot */
+            height: 60vh; /* Groot voor desktop feel */
             background: url('achtergrond.png') no-repeat center top/cover; /* Cover voor full fit, top aligned */
             color: white;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -131,7 +131,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2x2: twee naast elkaar, twee onder */
+            grid-template-columns: repeat(2, 1fr); /* Altijd 2 columns, voor desktop layout op alle schermen */
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
@@ -162,29 +162,7 @@
             color: #555;
         }
 
-        /* Voor mobile, stack naar 1 column, maar desktop prioriteit */
-        @media (max-width: 767px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-
-            header {
-                height: 50vh;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .subtitle {
-                font-size: 0.9em;
-            }
-
-            .buttons button {
-                padding: 6px 12px;
-                font-size: 0.8em;
-            }
-        }
+        /* Geen media query voor stacking op mobile - forceert desktop layout */
     </style>
 </head>
 <body>
