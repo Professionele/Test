@@ -37,15 +37,21 @@
             border-radius: 8px; margin-right: 20px;
         }
 
-        /* Verzendknop gekoppeld aan Formspree */
-        .btn-verzenden {
-            background: #0047FF; color: white; border: none;
-            padding: 20px 60px; font-size: 1.3em; font-weight: 700;
-            border-radius: 12px; cursor: pointer; text-decoration: none;
+        /* De vernieuwde Gmail knop */
+        .btn-gmail {
+            background: #0047FF; 
+            color: white; 
+            border: none;
+            padding: 20px 60px; 
+            font-size: 1.3em; 
+            font-weight: 700;
+            border-radius: 12px; 
+            cursor: pointer; 
+            text-decoration: none;
             display: inline-block;
             transition: background 0.3s;
         }
-        .btn-verzenden:hover { background: #0036cc; }
+        .btn-gmail:hover { background: #0036cc; }
     </style>
 </head>
 <body>
@@ -69,10 +75,7 @@
     </div>
 
     <br>
-    <form action="https://formspree.io/f/mdaljekl" method="POST">
-        <input type="hidden" name="_subject" value="Nieuw bericht via Contactpagina - Pressures Pro">
-        <button type="submit" class="btn-verzenden">Verzenden</button>
-    </form>
+    <a href="mailto:info@pressurespro.be" class="btn-gmail">E-mail ons</a>
 </div>
 
 </body>
