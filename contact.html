@@ -80,10 +80,25 @@
             text-decoration: none;
             display: inline-block;
         }
+        .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5em;
+    color: #0047FF; /* Dezelfde blauwe kleur als je knoppen */
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: transform 0.2s;
+}
+
+.back-arrow:hover {
+    transform: scale(1.2);
+}
     </style>
 </head>
 <body>
-
+<a href="index.html" class="back-arrow">←</a>
 <nav>
     <a href="index.html">Diensten</a>
     <a href="#">Over Ons</a>
