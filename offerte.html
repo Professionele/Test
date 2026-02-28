@@ -5,52 +5,73 @@
     <meta name="viewport" content="width=1024, initial-scale=0.35">
     <title>Offerte Aanvragen - Pressures Pro</title>
     <style>
-        
         * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
-        body { background:#fff; color: #000; padding: 40px 20px; text-align: center; }
+        body { background:#fff; color: #000; padding: 40px 20px; text-align: center; position: relative; }
 
-        nav { position:absolute; top:15px; right:15px; }
-        nav a { color:black; text-decoration:none; margin-left:15px; font-weight: 500; }
-
-        .container { max-width: 700px; margin: 60px auto; text-align: left; }
-
-        h1 { font-size: 3em; text-align: center; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
-        .intro { text-align: center; margin-bottom: 40px; color: #333; line-height: 1.5; font-size: 1.1em; }
-
-        label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 1.1em; }
-        input, select, textarea { 
-            width: 100%; padding: 15px; margin-bottom: 25px; 
-            border: 1px solid #ccc; border-radius: 8px; font-size: 1em; 
+        /* De terug-pijl naar de hoofdpagina */
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-size: 3.5em;
+            color: #0047FF;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 100;
         }
 
+        /* Navigatie rechtsboven */
+        nav { position:absolute; top:25px; right:25px; }
+        nav a { color:black; text-decoration:none; margin-left:15px; font-weight: 500; font-size: 1.1em; }
+
+        .container { max-width: 750px; margin: 80px auto; text-align: left; }
+
+        h1 { font-size: 3.5em; text-align: center; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .intro { text-align: center; margin-bottom: 50px; color: #333; line-height: 1.5; font-size: 1.2em; }
+
+        /* Formulier styling */
+        form { background: #fdfdfd; padding: 20px; border-radius: 10px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 1.1em; }
+        
+        input, select, textarea { 
+            width: 100%; 
+            padding: 18px; 
+            margin-bottom: 30px; 
+            border: 1px solid #ccc; 
+            border-radius: 10px; 
+            font-size: 1.1em;
+            background: #fff;
+        }
+
+        /* Twee kolommen voor E-mail en Telefoon */
         .row { display: flex; gap: 20px; }
         .row div { flex: 1; }
 
+        /* De blauwe verzendknop */
         .btn-submit {
-            background: #0047FF; color: white; border: none; 
-            padding: 18px; width: 100%; border-radius: 10px; 
-            font-size: 1.2em; font-weight: 600; cursor: pointer; margin-top: 10px;
+            background: #0047FF; 
+            color: white; 
+            border: none; 
+            padding: 20px; 
+            width: 100%; 
+            border-radius: 12px; 
+            font-size: 1.3em; 
+            font-weight: 700; 
+            cursor: pointer; 
+            transition: background 0.3s;
         }
-        .back-arrow {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 2.5em;
-    color: #0047FF; /* Dezelfde blauwe kleur als je knoppen */
-    text-decoration: none;
-    font-weight: bold;
-    z-index: 100;
-    transition: transform 0.2s;
-}
+        .btn-submit:hover { background: #0036cc; }
 
-.back-arrow:hover {
-    transform: scale(1.2);
-}
-
+        /* Mobiele optimalisatie voor de rij */
+        @media (max-width: 600px) {
+            .row { flex-direction: column; gap: 0; }
+        }
     </style>
 </head>
 <body>
+
 <a href="index.html" class="back-arrow">←</a>
+
 <nav>
     <a href="index.html">Diensten</a>
     <a href="#">Over Ons</a>
@@ -61,35 +82,38 @@
     <h1>OFFERTE AANVRAGEN</h1>
     <p class="intro">Vraag vandaag nog een offerte aan voor uw industriële schoonmaakwensen. We nemen zo snel mogelijk contact met u op.</p>
 
-    <form>
-        <label>Naam</label>
-        <input type="text" placeholder="Uw naam">
+    <form action="https://formspree.io/f/mdaljekl" method="POST">
+        
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="naam" placeholder="Uw volledige naam" required>
 
-        <label>Bedrijf</label>
-        <input type="text" placeholder="Uw bedrijfsnaam">
+        <label for="bedrijf">Bedrijf</label>
+        <input type="text" id="bedrijf" name="bedrijf" placeholder="Uw bedrijfsnaam">
 
         <div class="row">
             <div>
-                <label>E-mailadres</label>
-                <input type="email" placeholder="email@voorbeeld.com">
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" placeholder="email@voorbeeld.com" required>
             </div>
             <div>
-                <label>Telefoon</label>
-                <input type="tel" placeholder="0400 00 00 00">
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="0400 00 00 00">
             </div>
         </div>
 
-        <label>Locatie / Type Dienst</label>
-        <select>
-            <option>Selecteer type dienst</option>
-            <option>Hogedrukreiniging</option>
-            <option>Droogijsstralen</option>
-            <option>Machinereiniging</option>
-            <option>Reiniging op Hoogte</option>
+        <label for="dienst">Type Dienst</label>
+        <select id="dienst" name="dienst">
+            <option value="Hogedrukreiniging">Hogedrukreiniging</option>
+            <option value="Droogijsstralen">Droogijsstralen</option>
+            <option value="Machinereiniging">Machinereiniging / Dieptereiniging</option>
+            <option value="Hoogte">Reiniging op Hoogte</option>
+            <option value="Ontvetting">Ontvetting & Reiniging</option>
         </select>
 
-        <label>Bericht</label>
-        <textarea rows="6" placeholder="Vertel ons meer over de opdracht..."></textarea>
+        <label for="bericht">Bericht / Omschrijving opdracht</label>
+        <textarea id="bericht" name="bericht" rows="6" placeholder="Geef een korte beschrijving van de werkzaamheden..."></textarea>
+
+        <input type="hidden" name="_subject" value="Nieuwe Offerte Aanvraag - Pressures Pro">
 
         <button type="submit" class="btn-submit">Verzenden</button>
     </form>
@@ -97,4 +121,3 @@
 
 </body>
 </html>
-
