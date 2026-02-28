@@ -13,7 +13,7 @@
             height:55vh;
             background:url('achtergrond.png') no-repeat center center/cover;
             color:white;
-            text-shadow:2px 2px 4px rgba(0,0,0,0.7);
+            text-shadow:2px 2px 5px rgba(0,0,0,0.75);
         }
 
         nav {
@@ -33,7 +33,7 @@
 
         .header-content {
             position:absolute;
-            top:58%;           /* Dit maakt het lager (was 50%) */
+            top:63%;           /* Nog iets lager */
             left:50%;
             transform:translate(-50%, -50%);
             text-align:center;
@@ -41,20 +41,20 @@
         }
 
         h1 { 
-            font-size:3.8em;   /* Groter zoals je vroeg */
+            font-size:3.9em; 
             line-height:1; 
             margin-bottom:8px; 
         }
         .subtitle { 
-            font-size:1.15em;  /* Groter */
-            margin-bottom:20px; 
+            font-size:1.2em; 
+            margin-bottom:22px; 
         }
 
         .buttons button {
-            background:#007bff;
+            background:#003087;     /* Donkerblauw */
             color:white;
             border:none;
-            padding:14px 32px;   /* Groter en dikker */
+            padding:14px 34px;
             margin:8px;
             border-radius:8px;
             font-size:1.05em;
@@ -89,10 +89,15 @@
             box-shadow:0 3px 12px rgba(0,0,0,0.1);
         }
 
-        .card img { width:45px; height:auto; margin-right:15px; flex-shrink:0; }
+        .card img { 
+            width:65px;          /* Grotere icons */
+            height:auto; 
+            margin-right:18px; 
+            flex-shrink:0; 
+        }
         .card-content { flex:1; }
-        .card h3 { font-size:1.25em; color:#007bff; margin-bottom:5px; }
-        .card p { font-size:0.9em; color:#666; line-height:1.4; }
+        .card h3 { font-size:1.25em; color:#003087; margin-bottom:5px; }
+        .card p { font-size:0.9em; color:#555; line-height:1.4; }
     </style>
 </head>
 <body>
