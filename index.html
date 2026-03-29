@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024, initial-scale=0.35">
     <title>Industriële Schoonmaak België - Professionele Reinigingsdiensten | Pressures Pro</title>
-        <meta property="og:image" content="logo.png">
+    <meta property="og:image" content="logo.png">
     <meta property="og:title" content="Pressures Pro - Industriële Schoonmaak">
     <meta property="og:description" content="Professionele reiniging van opritten, zonnepanelen en industriële machines.">
     <meta property="og:url" content="https://pressurespro.be/">
@@ -13,7 +13,7 @@
 
     <style>
         * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
-        body { background:#fff; }
+        body { background:#fff; display: flex; flex-direction: column; min-height: 100vh; }
 
         header {
             position:relative;
@@ -69,7 +69,7 @@
             cursor:pointer;
         }
 
-        section { padding:40px 5%; text-align:center; }
+        section { padding:40px 5%; text-align:center; flex: 1; }
         section h2 { font-size:2em; margin-bottom:15px; }
         section h2::after {
             content:'';
@@ -107,30 +107,43 @@
         .card-content { flex:1; }
         .card h3 { font-size:1.4em; color:#003087; margin-bottom:8px; }
         .card p { font-size:1em; color:#555; line-height:1.4; }
+
+        /* Nieuwe Footer Style */
+        footer {
+            background: #f4f4f4;
+            padding: 50px 5%;
+            border-top: 5px solid #003087;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .footer-logo-text {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #003087;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .footer-details {
+            font-size: 1.2em; /* Grotere tekst zoals gevraagd */
+            color: #333;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .footer-details span {
+            color: #003087;
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
-        <div style="
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 15px 25px;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 12px;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-        z-index: 999;
-        text-align: right;
-    ">
-        <p style="margin: 0; font-size: 0.85em; color: #333; font-weight: 600; line-height: 1.5;">
-            BTW BE 0837.990.720<br>
-            Lode Peetersplantsoen 5<br>
-            2300 Turnhout
-        </p>
-    </div>
-
 
 <header>
     <div class="header-content">
@@ -148,71 +161,82 @@
     <div class="grid">
         
         <div class="card" onclick="location.href='opritreiniging.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-    <img src="opprit.png" alt="Opritreiniging">
-    <div class="card-content">
-        <h3>Opritreiniging</h3>
-        <p>Wij maken uw oprit volledig onkruidvrij, schoon en veilig voor iedereen. Klik voor foto's.</p>
-    </div>
-</div>
-
-    <div class="card" onclick="location.href='hogedrukreiniging.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="hogedrukreiniging.png" alt="Hogedrukreiniging">
-        <div class="card-content">
-            <h3>Hogedrukreiniging</h3>
-            <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen. Klik voor projecten.</p>
+            <img src="opprit.png" alt="Opritreiniging">
+            <div class="card-content">
+                <h3>Opritreiniging</h3>
+                <p>Wij maken uw oprit volledig onkruidvrij, schoon en veilig voor iedereen. Klik voor foto's.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card" onclick="location.href='droogijsstralen.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-    <img src="droogstralen.png" alt="Droogijsstralen">
-    <div class="card-content">
-        <h3>Droogijsstralen</h3>
-        <p>Krachtige maar veilige reiniging van gevoelige machines en oppervlakken. Klik voor meer projecten.</p>
-    </div>
-</div>
-
-    <div class="card" onclick="location.href='ventilatie-machinereiniging.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-    <img src="tandwielen.png" alt="Ventilatie-en Machinereiniging">
-    <div class="card-content">
-        <h3>Ventilatie-en Machinereiniging</h3>
-        <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden. Klik voor foto's.</p>
-    </div>
-</div>
-
-    <div class="card" onclick="location.href='hoogte.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="hoogte.png" alt="Reiniging op Hoogte">
-        <div class="card-content">
-            <h3>Reiniging op Hoogte</h3>
-            <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen. Klik voor info & foto's.</p>
+        <div class="card" onclick="location.href='hogedrukreiniging.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="hogedrukreiniging.png" alt="Hogedrukreiniging">
+            <div class="card-content">
+                <h3>Hogedrukreiniging</h3>
+                <p>Verwijderen van vet, roest en andere verontreiniging uit industriële omgevingen. Klik voor projecten.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card" onclick="location.href='zorg.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="zorg.png" alt="Zorgsector">
-        <div class="card-content">
-            <h3>Medische Reiniging</h3>
-            <p>Gespecialiseerde desinfectie voor medische omgevingen. Klik voor info & foto.</p>
+        <div class="card" onclick="location.href='droogijsstralen.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="droogstralen.png" alt="Droogijsstralen">
+            <div class="card-content">
+                <h3>Droogijsstralen</h3>
+                <p>Krachtige maar veilige reiniging van gevoelige machines en oppervlakken. Klik voor meer projecten.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card" onclick="location.href='zonnepanelen.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="zonnepaneel.png" alt="Zonnepaneel Reiniging">
-        <div class="card-content">
-            <h3>Zonnepaneel Reiniging</h3>
-            <p>Wij poetsen uw zonnepanelen spierwit voor een maximale opbrengst. Klik voor meer info.</p>
+        <div class="card" onclick="location.href='ventilatie-machinereiniging.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="tandwielen.png" alt="Ventilatie-en Machinereiniging">
+            <div class="card-content">
+                <h3>Ventilatie-en Machinereiniging</h3>
+                <p>Grondige reiniging van ventilatiesystemen en machines om efficiëntie te behouden. Klik voor foto's.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card" onclick="location.href='dakreiniging.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="dakreiniging.png" alt="Dakreiniging">
-        <div class="card-content">
-            <h3>Dakreiniging</h3>
-            <p>Professionele hogedrukreiniging van daken. Wij werken veilig en efficiënt voor een resultaat als nieuw. Klik voor meer info.</p>
+        <div class="card" onclick="location.href='hoogte.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="hoogte.png" alt="Reiniging op Hoogte">
+            <div class="card-content">
+                <h3>Reiniging op Hoogte</h3>
+                <p>Speciale technieken voor reiniging op moeilijk bereikbare plaatsen. Klik voor info & foto's.</p>
+            </div>
         </div>
-    </div>
 
-</div>
+        <div class="card" onclick="location.href='zorg.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="zorg.png" alt="Zorgsector">
+            <div class="card-content">
+                <h3>Medische Reiniging</h3>
+                <p>Gespecialiseerde desinfectie voor medische omgevingen. Klik voor info & foto.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="location.href='zonnepanelen.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="zonnepaneel.png" alt="Zonnepaneel Reiniging">
+            <div class="card-content">
+                <h3>Zonnepaneel Reiniging</h3>
+                <p>Wij poetsen uw zonnepanelen spierwit voor een maximale opbrengst. Klik voor meer info.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="location.href='dakreiniging.html'" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="dakreiniging.png" alt="Dakreiniging">
+            <div class="card-content">
+                <h3>Dakreiniging</h3>
+                <p>Professionele hogedrukreiniging van daken. Wij werken veilig en efficiënt voor een resultaat als nieuw. Klik voor meer info.</p>
+            </div>
+        </div>
+
+    </div>
 </section>
+
+<footer>
+    <div class="footer-container">
+        <span class="footer-logo-text">Pressures Pro</span>
+        <div class="footer-details">
+            <span>BTW:</span> BE 0837.990.720<br>
+            <span>Adres:</span> Lode Peetersplantsoen 5, 2300 Turnhout
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.6;">© 2026 Pressures Pro. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
     
 </body>
 </html>
